@@ -1,4 +1,3 @@
-# Carrito de la compra
 <h1>Carrito</h1>
 
 <div id="cart"></div>
