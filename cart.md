@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 <h1>Carrito</h1>
 
 <div id="cart"></div>
