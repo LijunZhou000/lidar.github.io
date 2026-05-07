@@ -1,0 +1,52 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  background: rgba(26, 26, 26, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(100, 108, 255, 0.15);
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.87);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.navbar-brand span {
+  color: #646cff;
+}
+
+.cart-btn {
+  position: relative;
+  color: rgba(255,255,255,0.75);
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.cart-btn:hover {
+  color: #646cff;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #646cff;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
