@@ -1,19 +1,31 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import './Carousel.css'
 
 export default function Carousel({ images = [] }) {
   const [current, setCurrent] = useState(0)
 
-  const prev = () => setCurrent((c) => (c - 1 + images.length) % images.length)
-  const next = () => setCurrent((c) => (c + 1) % images.length)
+  const slides = useMemo(
+    () => images.map((img) => (typeof img === 'string' ? { src: img, bg: undefined } : img)),
+    [images]
+  )
 
-  if (!images.length) return null
+  const prev = () => setCurrent((c) => (c - 1 + slides.length) % slides.length)
+  const next = () => setCurrent((c) => (c + 1) % slides.length)
+
+  if (!slides.length) return null
 
   return (
-    <div className="carousel">
+    <div className="carousel" aria-roledescription="carousel">
       <div className="carousel-track" style={{ transform: `translateX(-${current * 100}%)` }}>
-        {images.map((src, i) => (
-          <img key={i} src={src} alt={`Vista ${i + 1}`} className="carousel-img" />
+        {slides.map((slide, i) => (
+          <div
+            key={i}
+            className="carousel-slide"
+            style={{ background: slide.bg || 'transparent' }}
+            aria-hidden={i !== current}
+          >
+            <img src={slide.src} alt={`Vista ${i + 1}`} className="carousel-img" />
+          </div>
         ))}
       </div>
 
@@ -25,7 +37,7 @@ export default function Carousel({ images = [] }) {
       </button>
 
       <div className="carousel-dots">
-        {images.map((_, i) => (
+        {slides.map((_, i) => (
           <button
             key={i}
             type="button"

@@ -54,7 +54,7 @@
 }
 
 .product-description {
-  color: rgba(255,255,255,0.6);
+  color: rgb(0, 0, 0);
   line-height: 1.7;
   margin: 0;
   font-size: 1rem;
@@ -79,6 +79,9 @@
   cursor: pointer;
   transition: background 0.2s, transform 0.1s;
   align-self: flex-start;
+  width: 100%;   
+  display: block;
+  align-self: stretch;
 }
 
 .add-to-cart-btn:hover {

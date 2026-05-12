@@ -18,7 +18,11 @@ export const PRODUCTS = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
     heroImage: lidar2d0,
-    images: [lidar2d0, lidar2d1, lidar2d2],
+    images: [
+      { src: lidar2d0, bg: '#f8f8f8' },
+      { src: lidar2d1, bg: '#eeeeee' },
+      { src: lidar2d2, bg: '#eeeeee' },
+    ],
   },
   {
     id: 'lidar-3d',
