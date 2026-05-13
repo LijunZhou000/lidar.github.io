@@ -39,7 +39,7 @@ export default function Product() {
           <h1 className="product-name">{product.name}</h1>
           <p className="product-description">{product.description}</p>
           <div className="product-price">
-            ${product.price.toLocaleString()}
+            {product.price.toLocaleString()}€
           </div>
           <button className="add-to-cart-btn" onClick={handleAdd}>
             Añadir al carrito

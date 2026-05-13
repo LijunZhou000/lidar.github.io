@@ -37,7 +37,7 @@ export default function Home() {
                 <h3>{product.name}</h3>
                 <p>{product.description}</p>
                 <span className="product-card-price">
-                  ${product.price.toLocaleString()}
+                  {product.price.toLocaleString()}€
                 </span>
               </div>
             </Link>

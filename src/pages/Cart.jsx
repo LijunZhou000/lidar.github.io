@@ -39,7 +39,7 @@ export default function Cart() {
                   {item.name}
                 </Link>
                 <span className="cart-item-price">
-                  ${item.price.toLocaleString()}
+                  {item.price.toLocaleString()}€
                 </span>
               </div>
               <div className="cart-item-controls">
@@ -48,7 +48,7 @@ export default function Cart() {
                 <button onClick={() => updateQty(item.id, item.qty + 1)}>+</button>
               </div>
               <span className="cart-item-subtotal">
-                ${(item.price * item.qty).toLocaleString()}
+                {(item.price * item.qty).toLocaleString()}€
               </span>
               <button
                 className="cart-item-remove"
@@ -65,7 +65,7 @@ export default function Cart() {
           <h2>Resumen</h2>
           <div className="cart-total-row">
             <span>Total</span>
-            <strong>${total.toLocaleString()}</strong>
+            <strong>{total.toLocaleString()}€</strong>
           </div>
           <button className="checkout-btn" onClick={handleCheckout} disabled={showToast}>Finalizar compra</button>
           <Link to="/" className="continue-link">← Seguir comprando</Link>
