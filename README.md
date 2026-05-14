@@ -6,4 +6,5 @@ Probando Probando
   <button>Ir a About</button>
 </a> -->
 # Proyecto de Lidares educativos
-Este repositorio de GitHub incluye el código necesario para ejecutar ambos proyectos individuales
+Este repositorio de GitHub incluye el código necesario para ejecutar ambos proyectos individuales, además también incluye los modelos 3d para poder
+imprimir las partes necesarias.
