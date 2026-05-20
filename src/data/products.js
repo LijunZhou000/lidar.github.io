@@ -18,7 +18,7 @@ export const PRODUCTS = [
   {
     id: 'lidar-2d',
     name: 'Lidar 2D montado',
-    price: 300,
+    price: 150,
     description:
       'El sistema desarrollado se basa en un Arduino Uno R3 conectado a un sensor LiDAR TF-Luna, configurado como un dispositivo portátil tipo pistola de medición.',
     heroImage: lidar2d0,
@@ -32,7 +32,7 @@ export const PRODUCTS = [
   {
     id: 'lidar-2d-diy',
     name: 'Lidar 2D DIY (piezas)',
-    price: 200,
+    price: 100,
     description:
       'El sistema desarrollado se basa en un Arduino Uno R3 conectado a un sensor LiDAR TF-Luna, configurado como un dispositivo portátil tipo pistola de medición.',
     heroImage: lidar2d0,
@@ -46,7 +46,7 @@ export const PRODUCTS = [
   {
     id: 'lidar-3d',
     name: 'Lidar 3D montado',
-    price: 500,
+    price: 250,
     description:
       'Utilizamos un sistema de "Pan & Tilt" donde dos servos (controlados por los GPIO de la Raspberry Pi 4) mueven un sensor LiDAR 2D en los ejes horizontal y vertical, permitiendo cubrir un volumen esférico completo.',
     heroImage: lidar3d0,
@@ -58,7 +58,7 @@ export const PRODUCTS = [
   {
     id: 'lidar-3d-diy',
     name: 'Lidar 3D DIY (piezas)',
-    price: 400,
+    price: 200,
     description:
       'Utilizamos un sistema de "Pan & Tilt" donde dos servos (controlados por los GPIO de la Raspberry Pi 4) mueven un sensor LiDAR 2D en los ejes horizontal y vertical, permitiendo cubrir un volumen esférico completo.',
     heroImage: lidar3d0,
